@@ -10,7 +10,6 @@ def homepage():
     andel = 0.6
     aga = 1/1.141
     fp = 1/1.12
-    #timer = 150
 
     inputs = request.form.get('text')
     splitInput = inputs.split(",")
@@ -19,8 +18,9 @@ def homepage():
     timer = splitInput[1]
     
     lonn = int(float(timepris)*float(timer)*andel*aga*fp)
+    feedback = "Din lønn i perioden er {}.".format(lønn)
     
-    return str(lonn)
+    return str(feedback)
 
 
 if __name__ == '__main__':
