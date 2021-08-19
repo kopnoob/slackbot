@@ -11,8 +11,8 @@ def homepage():
     #fp = 1/1.12
     #timer = 150
     inputs = request.form.get('text')
-    lonn = int(inputs)*2#*timer*andel*aga*fp
-    return lonn
+    lonn = inputs#*timer*andel*aga*fp
+    return type(lonn)
 
 
 if __name__ == '__main__':
