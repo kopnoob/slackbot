@@ -18,7 +18,7 @@ def homepage():
     timepris = splitInput[0]
     timer = splitInput[1]
     
-    lonn = float(timepris)*float(timer)*andel*aga*fp
+    lonn = int(float(timepris)*float(timer)*andel*aga*fp)
     
     return str(lonn)
 
