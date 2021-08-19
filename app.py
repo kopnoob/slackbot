@@ -6,13 +6,14 @@ PORT = 4390
 
 @app.route('/', methods=['POST'])
 def homepage():
-    #andel = 0.6
-    #aga = 1/1.141
-    #fp = 1/1.12
-    #timer = 150
-    #lonn=timepris*timer*andel*aga*fp
+    andel = 0.6
+    aga = 1/1.141
+    fp = 1/1.12
+    timer = 150
     inputs = request.form.get('text')
-    return inputs
+    lonn = imputs*timer*andel*aga*fp
+    respons = "Din lønn i perioden er {}." format(lonn)
+    return respons
 
 
 if __name__ == '__main__':
