@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, request, Response
 
 app = Flask(__name__)
 
@@ -11,7 +11,7 @@ def homepage():
     #fp = 1/1.12
     #timer = 150
     #lonn=timepris*timer*andel*aga*fp
-    inputs = request.get('text')
+    inputs = request.form.get('text')
     return inputs
 
 
