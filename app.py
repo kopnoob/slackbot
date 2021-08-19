@@ -10,8 +10,8 @@ def homepage():
     #aga = 1/1.141
     #fp = 1/1.12
     #timer = 150
-    inputs = int(request.form.get('text'))
-    lonn = inputs*2#*timer*andel*aga*fp
+    inputs = request.form.get('text')
+    lonn = int(inputs)*2#*timer*andel*aga*fp
     return lonn
 
 
