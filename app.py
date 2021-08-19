@@ -4,8 +4,7 @@ app = Flask(__name__)
 
 PORT = 4390
 
-
-@app.route('/')
+@app.route('/', methods=['POST'])
 def homepage():
     return "Howdy hacker!"
 
