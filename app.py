@@ -11,7 +11,8 @@ def homepage():
     #fp = 1/1.12
     #timer = 150
     #lonn=timepris*timer*andel*aga*fp
-    return "Howdy hacker!"
+    inputs = request.form.get('text')
+    return inputs
 
 
 if __name__ == '__main__':
