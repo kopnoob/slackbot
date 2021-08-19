@@ -11,7 +11,7 @@ def homepage():
     #fp = 1/1.12
     #timer = 150
     #lonn=timepris*timer*andel*aga*fp
-    inputs = request.form.get('text')
+    inputs = request.get('text')
     return inputs
 
 
