@@ -11,9 +11,8 @@ def homepage():
     fp = 1/1.12
     timer = 150
     inputs = request.form.get('text')
-    lonn = int(inputs*timer*andel*aga*fp)
-    respons = "Din lønn i perioden er {}.".format(lonn)
-    return respons
+    lonn = inputs*timer*andel*aga*fp
+    return lonn
 
 
 if __name__ == '__main__':
