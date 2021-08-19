@@ -12,7 +12,7 @@ def homepage():
     #timer = 150
     inputs = request.form.get('text')
     lonn = inputs#*timer*andel*aga*fp
-    return type(lonn)
+    return lonn
 
 
 if __name__ == '__main__':
