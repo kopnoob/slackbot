@@ -18,7 +18,7 @@ def homepage():
     timer = splitInput[1]
     
     lonn = int(float(timepris)*float(timer)*andel*aga*fp)
-    feedback = "Din lønn i perioden er {}".format(lonn)
+    feedback = "{} timer med {} i timepris gir {} i lønn. Bonus og utbytte er også opparbeidet, og kommer i tillegg.".format(timer, timepris, lonn)
     
     return str(feedback)
 
