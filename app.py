@@ -12,7 +12,7 @@ def homepage():
     fp = 1/1.12
 
     inputs = request.form.get('text')
-    splitInput = inputs.split(",")
+    splitInput = re.findall(r'[^,\s]+',inputs)
 
     timepris = splitInput[0]
     timer = splitInput[1]
