@@ -14,7 +14,7 @@ def homepage():
     inputs = request.form.get('text')
     splitInput = re.findall(r'[^,\s]+',inputs)
 
-    if splitInput[1] in locals():
+    if 'splitInput[1]' in locals():
         timepris = splitInput[0]
         timer = splitInput[1]
 
