@@ -1,3 +1,4 @@
+
 import re
 from flask import Flask, request, Response
 
@@ -14,16 +15,17 @@ def homepage():
     inputs = request.form.get('text')
     splitInput = re.findall(r'[^,\s]+',inputs)
 
-    if 'splitInput[1]' in locals():
+    try:
+        splitInput[1]
+    except:
+        return str("Legg inn [timepris] og [timer] etter /lønn. Komma og mellomrom er godkjente separatorer.")
+    else:
         timepris = splitInput[0]
         timer = splitInput[1]
 
         lonn = int(float(timepris)*float(timer)*andel*aga*fp)
         feedback = "{} timer med {} i timepris gir {} i lønn. Bonus og utbytte er også opparbeidet, og kommer i tillegg.".format(timer, timepris, lonn)
 
-        return str(feedback)
-    else:
-        feedback = "Legg inn [timepris] og [timer] etter /lønn. Komma og mellomrom er godkjente separatorer."
         return str(feedback)
 
 
