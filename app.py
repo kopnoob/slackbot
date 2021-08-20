@@ -18,8 +18,9 @@ def homepage():
     timer = splitInput[1]
     
     lonn = int(float(timepris)*float(timer)*andel*aga*fp)
+    feedback = "Din lønn i perioden er {}".format(lonn)
     
-    return str(lonn)
+    return str(feedback)
 
 
 if __name__ == '__main__':
