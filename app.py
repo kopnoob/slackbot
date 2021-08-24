@@ -7,7 +7,7 @@ app = Flask(__name__)
 PORT = 4390
 
 @app.route('/', methods=['POST'])
-def homepage():
+def kalk():
     andel = 0.6
     aga = 1/1.141
     fp = 1/1.12
