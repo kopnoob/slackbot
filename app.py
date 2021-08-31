@@ -24,7 +24,7 @@ def kalk():
         timer = splitInput[1]
 
         lonn = round(float(timepris)*float(timer)*andel*aga*fp)
-        feedback = "{} timer med {} i timepris gir {} i lønn. Bonus og utbytte er også opparbeidet, og kommer i tillegg.".format(timer, timepris, lonn)
+        feedback = "{} timer med {} i timepris gir {} i lønn.".format(timer, timepris, lonn)
 
         return str(feedback)
 
